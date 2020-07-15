@@ -40,7 +40,7 @@ class BMSioModuleTests:
                      This is a mock test that  waits for n seconds before asserting true
             """
             time.sleep(.5)
-            assert True
+            assert False
 
         @staticmethod
         def test_can_hs_receive():
@@ -117,9 +117,16 @@ class BMSioModuleTests:
                 """
 
                 @staticmethod
-                def test_volt_sens_pin_fault_detection():
+                @mark.parametrize("test_input, expected", [
+                    ("TRUE", True),
+                    ("TRUE", True),
+                    ("TRUE", True),
+                    ("TRUE", True),
+                    ("False", False),
+                ])
+                def test_volt_sens_pin_fault_detection(test_input, expected):
                     time.sleep(1)
-                    assert True
+                    assert expected
 
         @mark.cur_sens
         class CurrentSensorTests:
@@ -138,7 +145,7 @@ class BMSioModuleTests:
                 @mark.skip(reason="testing functionality of mark skip")
                 def test_cur_sens_signal_conditioning():
                     time.sleep(1)
-                    assert False
+                    assert True
 
             @mark.fault_detection
             class FaultDetectionTests:

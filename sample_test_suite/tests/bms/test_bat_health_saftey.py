@@ -29,10 +29,8 @@ class BatSafetyTests:
     #     def test_bat_limit():
 
 
-
-
     @staticmethod
     @mark.xfail(reason="Test Fail")
     def test_safety():
-        time.sleep(2)
+        time.sleep(.7)
         assert False

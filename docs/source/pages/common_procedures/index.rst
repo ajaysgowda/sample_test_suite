@@ -6,9 +6,10 @@ This page will hold documentation on common procedures used while conducting a t
 For example:
 
     1. High voltage disable procedure.
-    2. Installing new controller (including immobilizer learn procedure)
-    3. Reserving track at proving grounds
-    4. Notifying garage of active high voltage test
+    2. Installing new controller
+    3. Immobilizer learn procedure
+    4. Reserving tracks at proving grounds
+    5. Notifying garage personnel of an active high voltage test
 
 .. toctree::
    :maxdepth: 2
