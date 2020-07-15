@@ -1,0 +1,15 @@
+@startuml
+actor operator
+operator -> "Start Button"
+participant "Ready Light"
+
+"Start Button" -> EBCM
+
+EBCM -> BMS : Turn ON
+EBCM -> TPIM : Turn ON
+EBCM -> APM: Turn ON
+EBCM -> "Other Low voltage Devices": Turn ON
+
+
+
+@enduml

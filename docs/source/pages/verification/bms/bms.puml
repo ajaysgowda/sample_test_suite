@@ -1,0 +1,54 @@
+@startmindmap
+* BMS
+** IO Module
+*** Serial Coms
+**** CAN - HS
+***** Message Rx/Tx
+****** Message Receiving
+****** Message transmitting
+***** Message payload manipulation
+****** Payload parsing
+****** Payload building
+***** Fault Detection
+**** CAN - MS
+***** Message Rx/Tx
+****** Message Receiving
+****** Message transmitting
+***** Message payload manipulation
+****** Payload parsing
+****** Payload building
+***** Fault Detection
+*** Sensors
+**** Voltage Sensor
+***** Signal conditioning
+***** Fault Detection
+**** Current Sensor
+***** Signal conditioning
+***** Fault Detection
+*** Actuators
+**** Contactor
+***** Actuation
+***** Fault Detection
+
+** SOC Estimator
+
+*** Open Voltage Method
+*** Kalman Filter
+*** Coulumb Counting Method
+*** Blending Function
+
+
+** Battery Health and safety
+*** Load balancing
+*** Charge and discharge limits
+
+** Fault Handling
+*** IO faults handler
+**** Pin fault handler
+**** CAN-HS fault handler
+**** CAN-MS fault handler
+*** Battery Estimation faults handler
+*** Battery Health fault handler
+**** Battery cell balancing fault
+
+@endmindmap
