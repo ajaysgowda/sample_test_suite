@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BMS IO tests - Actuator &mdash; Test Suite 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="BMS SOC TESTS - Kalman Filter" href="bms_soc_estimator_test_kalman.html" />
+    <link rel="prev" title="BMS IO tests - Sensor" href="bms_io_test_sensor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Test Suite
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Design Verification Test Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Battery Management System - Test Suite</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#component-break-down">Component break down</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bms_io_test_hs_can.html">BMS IO tests - High speed CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bms_io_test_ms_can.html">BMS IO tests - Medium speed CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bms_io_test_sensor.html">BMS IO tests - Sensor</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">BMS IO tests - Actuator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bms_soc_estimator_test_kalman.html">BMS SOC TESTS - Kalman Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bms_soc_estimator_test_coulomb.html">BMS SOC ESTIMATOR TESTS - COULOMB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bms_soc_estimator_test_hybrid.html">BMS SOC ESTIMATOR TESTS - Hybrid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../apm/index.html">Auxiliary Power Module - Test Suite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../validation/index.html">System Validation Test Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../common_procedures/index.html">Common Procedures Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../equipment_and_tools/index.html">Test Equipment and Tools Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Test Suite</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Design Verification Test Documentation</a> &raquo;</li>
+        
+          <li><a href="index.html">Battery Management System - Test Suite</a> &raquo;</li>
+        
+      <li>BMS IO tests - Actuator</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/pages/verification/bms/bms_io_test_actuator.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bms-io-tests-actuator">
+<h1>BMS IO tests - Actuator<a class="headerlink" href="#bms-io-tests-actuator" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests">
+<em class="property">class </em><code class="sig-prename descclassname">sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.</code><code class="sig-name descname">ActuatorsTests</code><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>All test pertaining to the Actuators</p>
+<dl class="py class">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests">
+<em class="property">class </em><code class="sig-name descname">ContactorTests</code><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>All test pertaining to contactors</p>
+<dl class="py class">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests.ActuationTests">
+<em class="property">class </em><code class="sig-name descname">ActuationTests</code><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests.ActuationTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>All tests pertaining to the actuation of the contactors</p>
+<dl class="py method">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests.ActuationTests.test_contactor_actuation">
+<em class="property">static </em><code class="sig-name descname">test_contactor_actuation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.ContactorTests.ActuationTests.test_contactor_actuation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.FaultDetectionTests">
+<em class="property">class </em><code class="sig-name descname">FaultDetectionTests</code><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.FaultDetectionTests" title="Permalink to this definition">¶</a></dt>
+<dd><p>All test pertaining to the fault detection of the contactors</p>
+<dl class="py method">
+<dt id="sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.FaultDetectionTests.test_contactor_fault_detection">
+<em class="property">static </em><code class="sig-name descname">test_contactor_fault_detection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_test_suite.tests.bms.test_iomodule.BMSioModuleTests.ActuatorsTests.FaultDetectionTests.test_contactor_fault_detection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bms_soc_estimator_test_kalman.html" class="btn btn-neutral float-right" title="BMS SOC TESTS - Kalman Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bms_io_test_sensor.html" class="btn btn-neutral float-left" title="BMS IO tests - Sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ajay
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
