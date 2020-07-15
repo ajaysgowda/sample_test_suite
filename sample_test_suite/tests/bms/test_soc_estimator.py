@@ -11,7 +11,7 @@ class SOCEstimatorTests:
     """
     class KalmanFilterTests:
         """
-        All tests pertaining to the Kalman filtering soc estimation algo
+        All tests pertaining to the Kalman filter soc estimation algo
         """
 
         @staticmethod
