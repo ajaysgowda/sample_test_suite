@@ -34,7 +34,8 @@ release = '0.0.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx_rtd_theme',
-    'sphinxcontrib.plantuml'
+    'sphinxcontrib.plantuml',
+    'sphinx.ext.githubpages'
 ]
 
 plantuml = 'java -jar C:/plantuml/plantuml.jar'
